@@ -6,14 +6,68 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0184AAEC2E09C8D500FBA455 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184AAEB2E09C8D500FBA455 /* WidgetKit.framework */; };
+		0184AAEE2E09C8D500FBA455 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184AAED2E09C8D500FBA455 /* SwiftUI.framework */; };
+		0184AAFB2E09C8D800FBA455 /* StopwatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0184AAE92E09C8D500FBA455 /* StopwatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0184AB032E09C93100FBA455 /* StopwatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0184AB022E09C93000FBA455 /* StopwatchAttributes.swift */; };
+		0184AB052E09CCD300FBA455 /* StopwatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0184AB022E09C93000FBA455 /* StopwatchAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0184AAF92E09C8D800FBA455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0184AA552E09B98C00FBA455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0184AAE82E09C8D500FBA455;
+			remoteInfo = StopwatchWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0184AAFC2E09C8D800FBA455 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0184AAFB2E09C8D800FBA455 /* StopwatchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0184AA5D2E09B98C00FBA455 /* FeatureiOSLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureiOSLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0184AA5D2E09B98C00FBA455 /* StopwatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopwatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0184AAE92E09C8D500FBA455 /* StopwatchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StopwatchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0184AAEB2E09C8D500FBA455 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0184AAED2E09C8D500FBA455 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0184AB022E09C93000FBA455 /* StopwatchAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0184AAFF2E09C8D800FBA455 /* Exceptions for "StopwatchWidget" folder in "StopwatchWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0184AAE82E09C8D500FBA455 /* StopwatchWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0184AA5F2E09B98C00FBA455 /* FeatureiOSLiveActivity */ = {
+		0184AA5F2E09B98C00FBA455 /* StopwatchApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FeatureiOSLiveActivity;
+			path = StopwatchApp;
+			sourceTree = "<group>";
+		};
+		0184AAEF2E09C8D500FBA455 /* StopwatchWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0184AAFF2E09C8D800FBA455 /* Exceptions for "StopwatchWidget" folder in "StopwatchWidgetExtension" target */,
+			);
+			path = StopwatchWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +80,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0184AAE62E09C8D500FBA455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0184AAEE2E09C8D500FBA455 /* SwiftUI.framework in Frameworks */,
+				0184AAEC2E09C8D500FBA455 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0184AA542E09B98C00FBA455 = {
 			isa = PBXGroup;
 			children = (
-				0184AA5F2E09B98C00FBA455 /* FeatureiOSLiveActivity */,
+				0184AB042E09CCC400FBA455 /* StopwatchShared */,
+				0184AA5F2E09B98C00FBA455 /* StopwatchApp */,
+				0184AAEF2E09C8D500FBA455 /* StopwatchWidget */,
+				0184AAEA2E09C8D500FBA455 /* Frameworks */,
 				0184AA5E2E09B98C00FBA455 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,35 +106,77 @@
 		0184AA5E2E09B98C00FBA455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0184AA5D2E09B98C00FBA455 /* FeatureiOSLiveActivity.app */,
+				0184AA5D2E09B98C00FBA455 /* StopwatchApp.app */,
+				0184AAE92E09C8D500FBA455 /* StopwatchWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0184AAEA2E09C8D500FBA455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0184AAEB2E09C8D500FBA455 /* WidgetKit.framework */,
+				0184AAED2E09C8D500FBA455 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0184AB042E09CCC400FBA455 /* StopwatchShared */ = {
+			isa = PBXGroup;
+			children = (
+				0184AB022E09C93000FBA455 /* StopwatchAttributes.swift */,
+			);
+			path = StopwatchShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0184AA5C2E09B98C00FBA455 /* FeatureiOSLiveActivity */ = {
+		0184AA5C2E09B98C00FBA455 /* StopwatchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0184AA682E09B98E00FBA455 /* Build configuration list for PBXNativeTarget "FeatureiOSLiveActivity" */;
+			buildConfigurationList = 0184AA682E09B98E00FBA455 /* Build configuration list for PBXNativeTarget "StopwatchApp" */;
 			buildPhases = (
 				0184AA592E09B98C00FBA455 /* Sources */,
 				0184AA5A2E09B98C00FBA455 /* Frameworks */,
 				0184AA5B2E09B98C00FBA455 /* Resources */,
+				0184AAFC2E09C8D800FBA455 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0184AAFA2E09C8D800FBA455 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0184AA5F2E09B98C00FBA455 /* StopwatchApp */,
+			);
+			name = StopwatchApp;
+			packageProductDependencies = (
+			);
+			productName = FeatureiOSLiveActivity;
+			productReference = 0184AA5D2E09B98C00FBA455 /* StopwatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0184AAE82E09C8D500FBA455 /* StopwatchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0184AB002E09C8D800FBA455 /* Build configuration list for PBXNativeTarget "StopwatchWidgetExtension" */;
+			buildPhases = (
+				0184AAE52E09C8D500FBA455 /* Sources */,
+				0184AAE62E09C8D500FBA455 /* Frameworks */,
+				0184AAE72E09C8D500FBA455 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0184AA5F2E09B98C00FBA455 /* FeatureiOSLiveActivity */,
+				0184AAEF2E09C8D500FBA455 /* StopwatchWidget */,
 			);
-			name = FeatureiOSLiveActivity;
+			name = StopwatchWidgetExtension;
 			packageProductDependencies = (
 			);
-			productName = FeatureiOSLiveActivity;
-			productReference = 0184AA5D2E09B98C00FBA455 /* FeatureiOSLiveActivity.app */;
-			productType = "com.apple.product-type.application";
+			productName = StopwatchWidgetExtension;
+			productReference = 0184AAE92E09C8D500FBA455 /* StopwatchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,9 +191,12 @@
 					0184AA5C2E09B98C00FBA455 = {
 						CreatedOnToolsVersion = 26.0;
 					};
+					0184AAE82E09C8D500FBA455 = {
+						CreatedOnToolsVersion = 26.0;
+					};
 				};
 			};
-			buildConfigurationList = 0184AA582E09B98C00FBA455 /* Build configuration list for PBXProject "FeatureiOSLiveActivity" */;
+			buildConfigurationList = 0184AA582E09B98C00FBA455 /* Build configuration list for PBXProject "StopwatchApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,13 +210,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0184AA5C2E09B98C00FBA455 /* FeatureiOSLiveActivity */,
+				0184AA5C2E09B98C00FBA455 /* StopwatchApp */,
+				0184AAE82E09C8D500FBA455 /* StopwatchWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0184AA5B2E09B98C00FBA455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0184AAE72E09C8D500FBA455 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +238,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0184AB052E09CCD300FBA455 /* StopwatchAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0184AAE52E09C8D500FBA455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0184AB032E09C93100FBA455 /* StopwatchAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0184AAFA2E09C8D800FBA455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0184AAE82E09C8D500FBA455 /* StopwatchWidgetExtension */;
+			targetProxy = 0184AAF92E09C8D800FBA455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0184AA662E09B98E00FBA455 /* Debug */ = {
@@ -256,17 +392,20 @@
 				DEVELOPMENT_TEAM = L4F45TBN2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.FeatureiOSLiveActivity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.StopwatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -287,17 +426,20 @@
 				DEVELOPMENT_TEAM = L4F45TBN2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.FeatureiOSLiveActivity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.StopwatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -308,10 +450,70 @@
 			};
 			name = Release;
 		};
+		0184AAFD2E09C8D800FBA455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4F45TBN2F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopwatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StopwatchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.StopwatchApp.StopwatchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0184AAFE2E09C8D800FBA455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4F45TBN2F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopwatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StopwatchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arganaemre.StopwatchApp.StopwatchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0184AA582E09B98C00FBA455 /* Build configuration list for PBXProject "FeatureiOSLiveActivity" */ = {
+		0184AA582E09B98C00FBA455 /* Build configuration list for PBXProject "StopwatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0184AA662E09B98E00FBA455 /* Debug */,
@@ -320,11 +522,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0184AA682E09B98E00FBA455 /* Build configuration list for PBXNativeTarget "FeatureiOSLiveActivity" */ = {
+		0184AA682E09B98E00FBA455 /* Build configuration list for PBXNativeTarget "StopwatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0184AA692E09B98E00FBA455 /* Debug */,
 				0184AA6A2E09B98E00FBA455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0184AB002E09C8D800FBA455 /* Build configuration list for PBXNativeTarget "StopwatchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0184AAFD2E09C8D800FBA455 /* Debug */,
+				0184AAFE2E09C8D800FBA455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
