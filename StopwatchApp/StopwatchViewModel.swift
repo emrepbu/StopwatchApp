@@ -190,15 +190,11 @@ class StopwatchViewModel: ObservableObject {
         )
         
         Task {
-            do {
-                // Use immediate update policy for critical updates
-                if immediate {
-                    await activity.update(activityContent, alertConfiguration: nil)
-                } else {
-                    await activity.update(activityContent)
-                }
-            } catch {
-                print("Failed to update Live Activity: \(error)")
+            // Use immediate update policy for critical updates
+            if immediate {
+                await activity.update(activityContent, alertConfiguration: nil)
+            } else {
+                await activity.update(activityContent)
             }
         }
     }
@@ -226,3 +222,4 @@ class StopwatchViewModel: ObservableObject {
         }
     }
 }
+
